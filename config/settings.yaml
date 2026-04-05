@@ -1,0 +1,20 @@
+# OpenHands Lab - Global Settings
+
+llm:
+  model: "anthropic/claude-sonnet-4-5-20250929"
+  api_key_env: "LLM_API_KEY"
+  base_url: null
+  temperature: 0.0
+  max_tokens: 4096
+
+runtime:
+  environment: "local"  # "local" or "docker"
+  working_dir: "."
+  docker_image: null
+  command_blacklist:
+    - "rm -rf /"
+    - "rm -rf /*"
+    - "mkfs"
+    - "> /dev/sda"
+
+session_log_dir: ".oh-lab"
