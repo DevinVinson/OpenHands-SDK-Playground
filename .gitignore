@@ -181,3 +181,4 @@ cython_debug/
 .cursorindexingignore
 /.oh-lab
 .DS_Store
+/examples/sdk/*
